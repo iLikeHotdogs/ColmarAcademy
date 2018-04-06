@@ -1,0 +1,20 @@
+
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  
+}
+
+header .content .desktop {
+  display: flex;
+  justify-content: flex-end;
+
+}
