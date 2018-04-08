@@ -1,20 +1,59 @@
+/* Universal Styles */
 
+html {
+ font-family: "Roboto", sans-serif;
+ font-size: 16px;
+}
+
+
+/*header*/
 
 header {
-  position: fixed;
+  background-color: white;
+  height: 4rem;
   width: 100%;
-  z-index: 100;
-
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
 }
+
+header img {
+  height: 3rem;
+  padding: 0 2% 0 1.5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
 
 header .content {
   display: flex;
   align-items: center;
-  
+  height: 64px;
+
 }
 
-header .content .desktop {
+header img {
+  padding-left: 24px;
+  height: 32px;
+}
+
+header nav  {
   display: flex;
   justify-content: flex-end;
 
+
+
 }
+
+nav span {
+  padding-left: 16px;
+
+}
+
+*/
