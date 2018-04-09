@@ -6,11 +6,22 @@ html {
  color: #000000;
 }
 
+main {
+  font-family: "Open Sans", sans-serif;
+  position:relative;
+  top: 4rem;
+  color: #000000;
+}
+
 a {
   text-decoration: none;
   padding-left: 1rem;
   color: #000000;
   font-size: 1.25rem;
+}
+
+section {
+  width: auto 0;
 }
 
 h1 {
@@ -21,12 +32,24 @@ h1 {
   color: #413c3c;
 }
 
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 1.2;
   font-weight: bold;
   color: #413c3c;
+}
+
+p {
+  line-height: 1.35;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 /*header*/
@@ -124,3 +147,53 @@ nav {
 /*main sections*/
 
 /*information section*/
+
+.quad-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.info-main-pic {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.info-main-pic img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.info-main-pic h2 {
+  padding: 0 0 1.5rem 0;
+}
+
+.triple-school-info {
+  display: flex;
+  flex-flow: column;
+  vertical-align: top;
+  margin-top: 1rem;
+  width: 35%;
+}
+
+.school-info img {
+  width: 35%;
+  height: auto;
+  margin: 3.5%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.school-info .info-text {
+  width: 56%;
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: space-between;
+  vertical-align: middle;
+
+}
+
+.school-info a {
+  color: #71cfee;
+  padding: 0;
+}
