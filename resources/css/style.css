@@ -202,3 +202,39 @@ nav {
   color: #71cfee;
   padding: 0;
 }
+
+/*Classes section*/
+
+.classes {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.classes h2 {
+  text-align: center;
+}
+
+.courses-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.course-info {
+  width: 30%;
+  height: auto;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.course-info img {
+  width:100%;
+}
+
+.course-detail {
+  padding: 1rem 0 0 1rem;
+  margin: 1.5rem auto;
+}
