@@ -108,6 +108,35 @@ nav {
   display: inline-block;
 }
 
+.mobile {
+  display: none;
+
+}
+
+
+
+@media only screen and (max-width:470px) {
+  .desktop, .content {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .mobile img {
+    width: auto;
+    height: 90%;
+  }
+
+
+
+
+
+}
+
 /*main section*/
 
 /*banner section*/
@@ -157,6 +186,32 @@ nav {
   color: #413c3c;
 }
 
+@media only screen and (max-width:470px) {
+  .start-button {
+    width: 100%;
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner img {
+    width: 90%;
+    padding: 2rem 1rem;
+    margin: auto;
+  }
+
+  .banner .banner-text {
+    width: 100%;
+    padding: 0 1rem;
+    margin: auto;
+  }
+
+  .banner-text h1 {
+    font-size: 2.75rem;
+  }
+
+}
+
 /*main sections*/
 
 /*information section*/
@@ -190,9 +245,10 @@ nav {
 }
 
 .info-main-pic p {
-  width: 90%;
+  width: 76%;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 .triple-school-info {
@@ -223,6 +279,43 @@ nav {
 .school-info a {
   color: #71cfee;
   padding: 0;
+}
+
+#mobile-pic {
+  display:none;
+}
+
+@media only screen and (max-width:470px) {
+  .information .info-main-pic, #desktop-pic {
+    display: none;
+  }
+
+  #mobile-pic {
+    display: block;
+    padding: 1rem 1rem 1.5rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .triple-school-info, .school-info .info-text{
+    width: 100%;
+    background-color: white;
+  }
+
+  .school-info {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .school-info img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .school-info .info-text {
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /*Classes section*/
@@ -270,6 +363,36 @@ nav {
   margin: 0 1rem;
 }
 
+
+@media only screen and (max-width:470px) {
+  .course-info img, h4 {
+    display: none;
+  }
+
+
+  .classes {
+    background-color: white;
+    border-top: 1px solid #8A97A8;
+    border-bottom: 1px solid #8A97A8;
+  
+  }
+
+  .courses-container {
+    flex-flow: column;
+  }
+
+  .course-info {
+    width: auto;
+    height: auto;
+    margin: 1rem 2rem 0.5rem 0.2rem;
+    background-color: #d3d3d3;
+  }
+
+  .course-detail {
+    padding: 1rem auto 1.5rem 1rem;
+  }
+}
+
 /*thesis section*/
 
 .thesis h1 {
@@ -299,7 +422,7 @@ nav {
 
 .thesis p {
   width: 90%;
-  font-size: 1.5rem;
+
 }
 
 .double-thesis-info {
