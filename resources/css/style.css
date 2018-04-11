@@ -203,7 +203,6 @@ nav {
     background-color: #a6a1a1;
     font-weight: 300;
   }
-
 }
 
 /*main sections*/
@@ -265,7 +264,6 @@ nav {
   flex-flow: column;
   justify-content: space-between;
   vertical-align: middle;
-
 }
 
 .school-info a {
@@ -281,15 +279,20 @@ nav {
   display:none;
 }
 
+#mobile-guest {
+  display: none;
+}
+
 @media only screen and (max-width:470px) {
-  .information .info-main-pic, #desktop-pic {
+  .information .info-main-pic, #desktop-pic, #desktop-guest {
     display: none;
   }
 
   #mobile-pic {
     display: block;
-    padding: 1rem 1rem 1.5rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     box-sizing: border-box;
+    width: 85%;
   }
 
   .info-school-container, .school-info .info-text{
@@ -307,10 +310,29 @@ nav {
     margin: auto;
   }
 
+  .school-info h3 {
+    font-size: 1.9rem;
+    padding-left: 1rem;
+  }
+
+  .school-info  p {
+    font-size: 1.1rem;
+    font-weight:100;
+    padding-left: 1rem;
+  }
+
+  .school-info a {
+    padding-left: 1rem;
+  }
+
   .school-info .info-text {
     box-sizing: border-box;
     padding: 1rem;
     margin-bottom: 2rem;
+  }
+
+  #mobile-guest {
+    display: block;
   }
 
   .school-info:nth-child(3n+0) {
@@ -326,7 +348,6 @@ nav {
   flex-flow: column;
   align-items: center;
   background-color: #e6e1e1;
-
 }
 
 .classes h1 {
@@ -369,12 +390,10 @@ nav {
     display: none;
   }
 
-
   .classes {
     background-color: white;
     border-top: 1px solid #8A97A8;
     border-bottom: 1px solid #8A97A8;
-
   }
 
   .courses-container {
@@ -400,6 +419,10 @@ nav {
   margin: 2rem 0;
 }
 
+#thesis-mobile {
+  display: none;
+}
+
 .thesis-container {
   display: flex;
   width: 100%;
@@ -422,7 +445,6 @@ nav {
 
 .thesis p {
   width: 90%;
-
 }
 
 .double-thesis-info {
@@ -447,7 +469,6 @@ nav {
   flex-flow: column;
   justify-content: space-between;
   vertical-align: middle;
-
 }
 
 .thesis-info a {
@@ -456,7 +477,7 @@ nav {
 }
 
 @media only screen and (max-width:470px) {
-  .thesis .double-thesis-info, .thesis h3, .thesis p {
+  .thesis .double-thesis-info, .thesis h3, .thesis p, #thesis-desktop {
     display: none;
   }
 
@@ -464,16 +485,16 @@ nav {
     margin: 2rem 0 1.5rem 0;
   }
 
+  #thesis-mobile {
+    display: block;
+  }
+
   .thesis .thesis-video {
     width: 100%;
-    padding: 1rem 0 1.5rem 0;
-  }
-
-  video {
-    margin: auto;
+    padding: 2rem 0 1.5rem 0;
+    margin-top: 1rem;
   }
 }
-
 
 /*footer*/
 footer {
@@ -506,10 +527,12 @@ footer span {
 
   footer {
     border-top: none;
+    margin: 1rem 0;
   }
 
-   h5 {
+   footer h5 {
     margin: auto;
     text-align: center;
+    font-size: 1rem;
   }
 }
