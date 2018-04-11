@@ -1,13 +1,13 @@
 /* Universal Styles */
 
 html {
- font-family: "Open Sans", sans-serif;
+ font-family: "Poppins", sans-serif;
  font-size: 16px;
  color: #000000;
 }
 
 main {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   position:relative;
   top: 4rem;
   color: #000000;
@@ -25,7 +25,7 @@ section {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 3.2rem;
   font-weight: 900;
   line-height: 1.1;
@@ -33,14 +33,14 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 2.4rem;
   font-weight: bold;
   padding: 2rem 0;
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: bold;
@@ -48,7 +48,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   font-weight: lighter;
@@ -249,7 +249,6 @@ nav {
   vertical-align: top;
   margin-top: 1rem;
   width: 40%;
-  
 }
 
 .school-info img {
@@ -258,7 +257,6 @@ nav {
   margin: 1.5rem 1.5rem;
   vertical-align: middle;
   display: inline-block;
-
 }
 
 .school-info .info-text {
@@ -294,7 +292,7 @@ nav {
     box-sizing: border-box;
   }
 
-  .triple-school-info, .school-info .info-text{
+  .info-school-container, .school-info .info-text{
     width: 100%;
     background-color: white;
   }
@@ -486,7 +484,7 @@ footer {
 }
 
 footer h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   display: inline-block;
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
