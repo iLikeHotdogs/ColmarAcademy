@@ -111,7 +111,7 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:450px) {
   .desktop, .header-container {
     display: none;
   }
@@ -178,7 +178,7 @@ nav {
   color: #413c3c;
 }
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:450px) {
 
   .banner img {
     width: 99%;
@@ -283,7 +283,7 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:450px) {
   .information .info-main-pic, #desktop-pic, #desktop-guest {
     display: none;
   }
@@ -385,7 +385,7 @@ nav {
 }
 
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:450px) {
   .course-info img, h4 {
     display: none;
   }
@@ -476,7 +476,7 @@ nav {
   padding: 0;
 }
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:450px) {
   .thesis .double-thesis-info, .thesis h3, .thesis p, #thesis-desktop {
     display: none;
   }
@@ -520,7 +520,7 @@ footer span {
   padding-left: 1rem;
 }
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:Poppinspx) {
    footer nav {
     display: none;
   }
