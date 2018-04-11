@@ -44,7 +44,6 @@ h3 {
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: bold;
-
   color: #413c3c;
 }
 
@@ -82,7 +81,7 @@ header img {
   padding: 0 2% 0 1.5rem;
 }
 
-.content {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,13 +109,10 @@ nav {
 
 .mobile {
   display: none;
-
 }
 
-
-
 @media only screen and (max-width:470px) {
-  .desktop, .content {
+  .desktop, .header-container {
     display: none;
   }
 
@@ -130,10 +126,6 @@ nav {
     width: auto;
     height: 90%;
   }
-
-
-
-
 
 }
 
@@ -165,8 +157,8 @@ nav {
 }
 
 .banner .banner-text {
-    width: 25%;
-    box-sizing: border-box;
+  width: 25%;
+  box-sizing: border-box;
 }
 
 .start-button {
@@ -187,17 +179,10 @@ nav {
 }
 
 @media only screen and (max-width:470px) {
-  .start-button {
-    width: 100%;
-    align-self: center;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-  }
 
   .banner img {
-    width: 90%;
-    padding: 2rem 1rem;
-    margin: auto;
+    width: 99%;
+    margin: 0 .1rem 2rem .1rem;
   }
 
   .banner .banner-text {
@@ -210,15 +195,22 @@ nav {
     font-size: 2.75rem;
   }
 
+  .start-button {
+    width: 100%;
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #a6a1a1;
+    font-weight: 300;
+  }
+
 }
 
 /*main sections*/
 
 /*information section*/
 
-
-
-.quad-container {
+.information-container {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
@@ -251,12 +243,13 @@ nav {
   font-weight: 300;
 }
 
-.triple-school-info {
+.info-school-container {
   display: flex;
   flex-flow: column;
   vertical-align: top;
   margin-top: 1rem;
   width: 40%;
+  
 }
 
 .school-info img {
@@ -265,6 +258,7 @@ nav {
   margin: 1.5rem 1.5rem;
   vertical-align: middle;
   display: inline-block;
+
 }
 
 .school-info .info-text {
@@ -279,6 +273,10 @@ nav {
 .school-info a {
   color: #71cfee;
   padding: 0;
+}
+
+.school-info:nth-child(3n+0) {
+  background-color: #d3d3d3;
 }
 
 #mobile-pic {
@@ -315,6 +313,10 @@ nav {
     box-sizing: border-box;
     padding: 1rem;
     margin-bottom: 2rem;
+  }
+
+  .school-info:nth-child(3n+0) {
+    background-color: white;
   }
 }
 
@@ -374,7 +376,7 @@ nav {
     background-color: white;
     border-top: 1px solid #8A97A8;
     border-bottom: 1px solid #8A97A8;
-  
+
   }
 
   .courses-container {
@@ -455,6 +457,26 @@ nav {
   padding: 0;
 }
 
+@media only screen and (max-width:470px) {
+  .thesis .double-thesis-info, .thesis h3, .thesis p {
+    display: none;
+  }
+
+  .thesis {
+    margin: 2rem 0 1.5rem 0;
+  }
+
+  .thesis .thesis-video {
+    width: 100%;
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  video {
+    margin: auto;
+  }
+}
+
+
 /*footer*/
 footer {
   border-top: 1px solid #000000;
@@ -477,4 +499,19 @@ footer nav {
 
 footer span {
   padding-left: 1rem;
+}
+
+@media only screen and (max-width:470px) {
+   footer nav {
+    display: none;
+  }
+
+  footer {
+    border-top: none;
+  }
+
+   h5 {
+    margin: auto;
+    text-align: center;
+  }
 }
